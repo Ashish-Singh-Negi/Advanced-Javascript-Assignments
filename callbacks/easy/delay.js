@@ -3,7 +3,6 @@
 // You are required to write a function named delay that takes two parameters: a time duration in milliseconds and a value. 
 // The function should return a Promise that waits for the given time and then resolves with the provided value.
 
-<<<<<<< HEAD
 function delay(ms, value) {
     return new Promise(resolve => {
         setTimeout(() => {
@@ -11,8 +10,5 @@ function delay(ms, value) {
         }, ms)
     })
 }
-=======
-function delay(ms, value, callback) {}
->>>>>>> dbc72668b21099b786a6c06c6ceb049d9f5525fd
 
 module.exports = delay;
