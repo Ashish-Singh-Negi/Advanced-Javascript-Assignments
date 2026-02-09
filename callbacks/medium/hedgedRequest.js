@@ -11,6 +11,9 @@
 // - Start Secondary after timeoutMs if needed.
 // - First success wins.
 // - Callback must be called exactly once.
-function hedgedRequest(primary, secondary, timeoutMs, onComplete) {}
+async function hedgedRequest(primary, secondary, timeoutMs, onComplete) { }
+
+
+
 
 module.exports = hedgedRequest;

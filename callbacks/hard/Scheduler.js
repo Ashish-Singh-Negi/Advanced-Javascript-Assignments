@@ -11,11 +11,11 @@
 // by yielding execution voluntarily.
 
 class Scheduler {
-  constructor() {}
+  constructor() { }
 
-  schedule(task, priority = 0) {}
+  schedule(task, priority = 0) { }
 
-  run(onAllFinished) {}
+  run(onAllFinished) { }
 }
 
 module.exports = Scheduler;
