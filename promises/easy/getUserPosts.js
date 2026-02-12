@@ -14,6 +14,22 @@
 
 // module.exports = getUserPosts;
 
-function getUserPosts(userId) {}
+function getUserPosts(userId) {
+
+    return new Promise((resolve, reject) => {
+        try {
+            const user = fetchUser(userId)
+            resolve(user)
+        } catch (error) {
+            reject(error)
+        }
+    }).then(user => {
+        const posts = fetchPosts(user.id)
+        return posts
+    }).catch(err => {
+        console.error(err)
+    })
+
+}
 
 module.exports = getUserPosts;
