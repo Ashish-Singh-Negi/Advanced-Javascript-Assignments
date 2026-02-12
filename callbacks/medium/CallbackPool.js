@@ -9,11 +9,11 @@
 
 
 class CallbackPool {
-  constructor(limit) {}
+  constructor(limit) { }
 
-  run(task, onComplete) {}
+  run(task, onComplete) { }
 
-  _next() {}
+  _next() { }
 }
 
 module.exports = CallbackPool;
