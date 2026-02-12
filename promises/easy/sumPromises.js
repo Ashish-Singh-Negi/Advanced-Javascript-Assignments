@@ -3,7 +3,21 @@
 // You are given two Promises that each resolve to numeric values. 
 // Your task is to return a new Promise that resolves to the sum of these two numbers. 
 // Both Promises should be executed in parallel using Promise.all to avoid unnecessary waiting.
-async function sumPromises(p1, p2) {}
+async function sumPromises(p1, p2) {
+    return new Promise(resolve => {
+
+        Promise.all([p1, p2]).then(results => {
+            let sum = 0;
+
+            results.forEach(result => {
+                sum = sum + result
+            })
+
+            resolve(sum)
+        })
+
+    })
+}
 
 module.exports = sumPromises;
 
